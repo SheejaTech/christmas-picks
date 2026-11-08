@@ -1,318 +1,634 @@
 <!doctype html>
-<html lang="en" data-type="product" data-radius="soft" data-buttons="pill" data-motion>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Christmas Picks '26: what to list on Etsy, ranked by demand</title>
 <meta name="description" content="All 907 Merchize print-on-demand products swept and cross-checked against 30 days of Etsy demand data. Four lead SKUs to list first, five tests, and the Dec 10 clock.">
+<link rel="canonical" href="https://sheejatech.github.io/christmas-picks/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Christmas Picks '26: what to list on Etsy, ranked by demand">
 <meta property="og:description" content="907 Merchize SKUs × 30 days of Etsy demand data. The four products to list first — ornaments, night lights, stockings, advent boxes.">
 <meta property="og:image" content="share.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#e5e1d8">
-<link rel="canonical" href="https://sheejatech.github.io/christmas-picks/">
+<meta name="theme-color" content="#faf7f0">
 <meta name="site-kind" content="other">
 <meta name="page-type" content="product">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Besley:wght@400..700&family=Albert+Sans:wght@400..600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/system.css">
-<link rel="stylesheet" href="assets/ui/cards.css">
-<link rel="stylesheet" href="assets/motion/motion.css">
-<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
-<link rel="stylesheet" href="assets/layout/layout.css">
-<link rel="stylesheet" href="assets/icons/icon.css">
-<link rel="stylesheet" href="assets/ui/base.css">
-<link rel="stylesheet" href="assets/moments/pinned-chapters/moment.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root {
-  --p-bg: #e5e1d8; --p-surface: #dad5ca; --p-ink: #2a1d17; --p-muted: #65564c;
-  --p-accent: #456f3a; --p-accent-ink: #ffffff; --p-action: #456f3a; --p-action-ink: #ffffff;
-  --p-inv-bg: #2a1d17; --p-inv-surface: #352822; --p-inv-ink: #e5e1d8; --p-inv-muted: #9e968e;
-  --p-inv-accent: #e5e1d8; --p-inv-accent-ink: #2a1d17; --p-inv-action: #e5e1d8; --p-inv-action-ink: #2a1d17;
-  --font-display: "Besley", Georgia, serif;
-  --font-text: "Albert Sans", system-ui, sans-serif;
-  --display-weight: 400;
-  --display-tracking: -0.02em;
-  --display-tracking-xl: -0.026em;
-}
-</style>
-<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
-<script src="assets/backgrounds/backgrounds.js"></script>
-<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
-<link rel="modulepreload" href="assets/moments/moments.js">
-<link rel="modulepreload" href="assets/moments/lib.js">
-<link rel="modulepreload" href="assets/moments/pinned-chapters/moment.js">
-<style>
-  #tier-1 .panel { --p-h: 260px; }
-  .card__links { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-5); margin-top: var(--s-4); }
-  .card__links a { font-size: var(--t-small); }
-  .btn--secondary { box-shadow: inset 0 0 0 1.5px var(--p-ink); }
-  .hero--product .hero__stage img { --ly-pos: 50% 38%; }
-  .rows .rows__name small { display: block; font-weight: 400; color: var(--muted); font-size: var(--t-small); }
-  .photo-box { position: relative; overflow: hidden; border-radius: var(--r-lg); aspect-ratio: 1 / 1; }
-  .photo-box--land { aspect-ratio: 3 / 2; }
-  .photo-box img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  #timing .t-stat { margin-bottom: var(--s-2); }
-  @media (min-width: 640px) and (max-width: 1279px) {
-    main > section.g2 > .wrap > .grid:last-child,
-    main > section.g2 > .wrap > .group > .grid:last-child { align-self: stretch; flex: 1 1 auto; min-height: 0; }
-    main > section.g2 > .wrap > :is(.group, .grid) > .card--open > .panel { flex: 1 1 auto; min-height: 240px; }
+  :root {
+    --bg: #faf7f0;
+    --bg-deep: #f3eee3;
+    --card: #fffdf8;
+    --ink: #211b15;
+    --ink-soft: #4c4238;
+    --muted: #6e6357;
+    --sage: #45603a;
+    --sage-ink: #f4f1e8;
+    --line: rgba(33, 27, 21, 0.09);
+    --shell-bg: rgba(33, 27, 21, 0.045);
+    --shell-line: rgba(33, 27, 21, 0.07);
+    --ambient: 0 30px 70px -38px rgba(33, 27, 21, 0.22);
+    --r-outer: 2rem;
+    --r-inner: calc(2rem - 6px);
+    --ease: cubic-bezier(0.32, 0.72, 0, 1);
+    --font-display: "Fraunces", Georgia, serif;
+    --font-text: "Plus Jakarta Sans", system-ui, sans-serif;
   }
-  @media (max-width: 639px) { #tier-1 .panel { --p-h: 200px; } }
-  @media (max-width: 359px) { .nav .nav__actions { display: none !important; } }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-text);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: rgba(69, 96, 58, 0.24); }
+  a { color: inherit; }
+  img { display: block; max-width: 100%; }
+  .wrap { width: min(100% - 3rem, 1180px); margin-inline: auto; }
+  @media (max-width: 767px) { .wrap { width: min(100% - 2.5rem, 1180px); } }
+
+  /* grain: fixed, pointer-events-none, never on scrolling containers */
+  .grain {
+    position: fixed; inset: 0; z-index: 90; pointer-events: none; opacity: 0.032;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* type */
+  h1, h2, .giant, .step-num {
+    font-family: var(--font-display);
+    font-weight: 420;
+    letter-spacing: -0.028em;
+    margin: 0;
+  }
+  h1 { font-size: clamp(3rem, 6.6vw, 6rem); line-height: 0.99; }
+  h2 { font-size: clamp(2.1rem, 4.2vw, 3.4rem); line-height: 1.02; }
+  h2 em, h1 em { font-style: italic; font-weight: 380; color: var(--sage); }
+  .lead { font-size: clamp(1.05rem, 1.4vw, 1.2rem); color: var(--ink-soft); max-width: 46ch; margin: 0; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 7px 14px; border-radius: 999px;
+    border: 1px solid var(--line); background: rgba(255, 253, 248, 0.7);
+    font-size: 10.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .eyebrow i { width: 6px; height: 6px; border-radius: 50%; background: var(--sage); }
+
+  /* buttons: pill + nested icon circle (button-in-button) */
+  .btn {
+    display: inline-flex; align-items: center; gap: 14px;
+    padding: 10px 12px 10px 26px; border-radius: 999px; border: 0;
+    font-family: var(--font-text); font-size: 15px; font-weight: 600;
+    text-decoration: none; cursor: pointer;
+    transition: transform 0.55s var(--ease), box-shadow 0.55s var(--ease), background-color 0.55s var(--ease);
+    will-change: transform;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn:active { transform: scale(0.98); }
+  .btn--primary { background: var(--ink); color: var(--bg); box-shadow: 0 18px 40px -22px rgba(33, 27, 21, 0.55); }
+  .btn--primary:hover { box-shadow: 0 24px 48px -22px rgba(33, 27, 21, 0.6); }
+  .btn--ghost { background: rgba(255, 253, 248, 0.65); color: var(--ink); border: 1px solid var(--line); }
+  .btn__ic {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 34px; height: 34px; border-radius: 50%; flex: none;
+    background: rgba(250, 247, 240, 0.16);
+    transition: transform 0.55s var(--ease), background-color 0.55s var(--ease);
+  }
+  .btn--ghost .btn__ic { background: rgba(33, 27, 21, 0.06); }
+  .btn:hover .btn__ic { transform: translate(3px, -2px) scale(1.06); background: rgba(250, 247, 240, 0.26); }
+  .btn--ghost:hover .btn__ic { background: rgba(33, 27, 21, 0.1); }
+  .btn__ic svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+  .tlink { color: var(--sage); font-weight: 600; font-size: 13.5px; text-decoration: none; border-bottom: 1px solid rgba(69, 96, 58, 0.3); padding-bottom: 2px; transition: border-color 0.5s var(--ease); }
+  .tlink:hover { border-color: var(--sage); }
+
+  /* double-bezel shell */
+  .shell { padding: 6px; border-radius: var(--r-outer); background: var(--shell-bg); border: 1px solid var(--shell-line); box-shadow: var(--ambient); }
+  .core { border-radius: var(--r-inner); background: var(--card); box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5); overflow: hidden; height: 100%; }
+  .ph { position: relative; overflow: hidden; border-radius: var(--r-inner); }
+  .ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); will-change: transform; }
+  .card:hover .ph img { transform: scale(1.045); }
+
+  /* floating island nav */
+  .nav {
+    position: fixed; top: 18px; left: 50%; transform: translateX(-50%); z-index: 70;
+    display: flex; align-items: center; gap: 6px;
+    padding: 8px 8px 8px 20px; border-radius: 999px;
+    background: rgba(250, 247, 240, 0.72);
+    -webkit-backdrop-filter: blur(22px) saturate(1.5); backdrop-filter: blur(22px) saturate(1.5);
+    border: 1px solid rgba(33, 27, 21, 0.08);
+    box-shadow: 0 20px 50px -28px rgba(33, 27, 21, 0.35);
+    width: max-content;
+  }
+  .nav__logo { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 15px; text-decoration: none; margin-right: 10px; }
+  .nav__logo i { width: 9px; height: 9px; border-radius: 50%; background: var(--sage); }
+  .nav__links { display: flex; align-items: center; gap: 2px; }
+  .nav__links a {
+    padding: 8px 14px; border-radius: 999px; font-size: 13.5px; font-weight: 500;
+    text-decoration: none; color: var(--ink-soft);
+    transition: background-color 0.5s var(--ease), color 0.5s var(--ease);
+  }
+  .nav__links a:hover { background: rgba(33, 27, 21, 0.06); color: var(--ink); }
+  .nav__cta { padding: 9px 18px; border-radius: 999px; background: var(--ink); color: var(--bg); font-size: 13px; font-weight: 600; text-decoration: none; transition: transform 0.55s var(--ease); }
+  .nav__cta:hover { transform: scale(1.04); }
+  .nav__burger {
+    display: none; width: 40px; height: 40px; border-radius: 50%; border: 0; cursor: pointer;
+    background: rgba(33, 27, 21, 0.06); position: relative;
+  }
+  .nav__burger span { position: absolute; left: 12px; right: 12px; height: 1.6px; background: var(--ink); border-radius: 2px; transition: transform 0.6s var(--ease), top 0.6s var(--ease); }
+  .nav__burger span:nth-child(1) { top: 15px; }
+  .nav__burger span:nth-child(2) { top: 22px; }
+  body.menu-open .nav__burger span:nth-child(1) { top: 18.5px; transform: rotate(45deg); }
+  body.menu-open .nav__burger span:nth-child(2) { top: 18.5px; transform: rotate(-45deg); }
+  @media (max-width: 900px) {
+    .nav { left: 16px; right: 16px; transform: none; justify-content: space-between; width: auto; padding: 8px 8px 8px 18px; }
+    .nav__links, .nav__cta { display: none; }
+    .nav__burger { display: block; }
+  }
+
+  /* full-screen menu overlay */
+  .menu {
+    position: fixed; inset: 0; z-index: 60; display: grid; place-items: center;
+    background: rgba(250, 247, 240, 0.88);
+    -webkit-backdrop-filter: blur(30px) saturate(1.4); backdrop-filter: blur(30px) saturate(1.4);
+    opacity: 0; visibility: hidden; transition: opacity 0.6s var(--ease), visibility 0s linear 0.6s;
+  }
+  body.menu-open .menu { opacity: 1; visibility: visible; transition-delay: 0s; }
+  .menu nav { display: grid; gap: 6px; text-align: center; }
+  .menu a {
+    font-family: var(--font-display); font-size: clamp(2.2rem, 8vw, 3.6rem); font-weight: 400;
+    letter-spacing: -0.02em; text-decoration: none; line-height: 1.15;
+    opacity: 0; transform: translateY(44px);
+    transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  }
+  body.menu-open .menu a { opacity: 1; transform: none; }
+  body.menu-open .menu a:nth-child(1) { transition-delay: 0.1s; }
+  body.menu-open .menu a:nth-child(2) { transition-delay: 0.18s; }
+  body.menu-open .menu a:nth-child(3) { transition-delay: 0.26s; }
+  body.menu-open .menu a:nth-child(4) { transition-delay: 0.34s; }
+  body.menu-open .menu a:nth-child(5) { transition-delay: 0.42s; }
+  .menu a:hover { color: var(--sage); }
+
+  /* sections breathe */
+  section { padding: clamp(96px, 12vh, 150px) 0; }
+  .sec-head { display: grid; gap: 18px; margin-bottom: clamp(44px, 6vh, 72px); max-width: 720px; }
+
+  /* hero */
+  .hero { min-height: 100vh; min-height: 100dvh; display: flex; align-items: center; padding-top: 140px; }
+  .hero__grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(40px, 5vw, 80px); align-items: center; }
+  .hero__copy { display: grid; gap: 26px; justify-items: start; }
+  .hero__facts { display: flex; flex-wrap: wrap; gap: 10px 34px; margin: 6px 0 0; }
+  .hero__facts div { display: grid; }
+  .hero__facts b { font-family: var(--font-display); font-weight: 480; font-size: 1.55rem; letter-spacing: -0.02em; }
+  .hero__facts span { font-size: 12.5px; color: var(--muted); }
+  .hero__visual { position: relative; }
+  .hero__main { aspect-ratio: 4 / 4.6; transform: rotate(1.6deg); }
+  .hero__main .ph, .hero__back .ph { position: absolute; inset: 0; border-radius: var(--r-inner); }
+  .hero__back {
+    position: absolute; inset: 0; transform: rotate(-2.4deg) translate(-34px, 20px);
+    z-index: -1; aspect-ratio: 4 / 4.6;
+  }
+  .hero__back .ph { background: var(--bg-deep); }
+  @media (max-width: 767px) {
+    .hero { min-height: auto; padding-top: 120px; }
+    .hero__grid { grid-template-columns: 1fr; }
+    .hero__main { transform: none; aspect-ratio: 4 / 4.2; }
+    .hero__back { display: none; }
+  }
+
+  /* ticker */
+  .ticker {
+    border-block: 1px solid var(--line); background: var(--ink); color: #d8d2c4;
+    overflow: hidden; padding: 13px 0;
+  }
+  .ticker__track { display: flex; width: max-content; animation: tick 30s linear infinite; }
+  .ticker:hover .ticker__track { animation-play-state: paused; }
+  .ticker span { display: inline-flex; align-items: center; gap: 2.6rem; padding-right: 2.6rem; font-size: 11.5px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; white-space: nowrap; }
+  .ticker i { width: 5px; height: 5px; border-radius: 50%; background: var(--sage); flex: none; }
+  @keyframes tick { to { transform: translateX(-50%); } }
+
+  /* plan: z-axis cascade */
+  .cascade { display: flex; justify-content: center; align-items: stretch; }
+  .step {
+    width: 360px; max-width: 88vw; padding: 0;
+    transition: transform 0.8s var(--ease);
+  }
+  .step .ph { aspect-ratio: 4 / 3.4; border-radius: calc(var(--r-inner) - 4px) calc(var(--r-inner) - 4px) 0 0; }
+  .step__body { padding: 22px 24px 26px; display: grid; gap: 10px; }
+  .step-num { font-size: 2rem; color: var(--sage); line-height: 1; }
+  .step h3 { margin: 0; font-size: 1.15rem; font-weight: 600; letter-spacing: -0.01em; }
+  .step p { margin: 0; font-size: 14.5px; color: var(--muted); line-height: 1.55; }
+  .step:nth-child(1) { transform: rotate(-2.2deg) translateY(14px); z-index: 1; }
+  .step:nth-child(2) { transform: rotate(1.4deg); z-index: 2; margin-inline: -34px; }
+  .step:nth-child(3) { transform: rotate(2.6deg) translateY(18px); z-index: 3; margin-left: -34px; }
+  .step:hover { transform: rotate(0deg) translateY(-8px); z-index: 5; position: relative; }
+  @media (max-width: 767px) {
+    .cascade { flex-direction: column; gap: 26px; align-items: center; }
+    .step { transform: none; margin: 0; width: 100%; max-width: 420px; }
+    .step:hover { transform: none; }
+  }
+
+  /* tier 1: asymmetrical bento */
+  .bento { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
+  .card { padding: 0; transition: transform 0.7s var(--ease); }
+  .card:hover { transform: translateY(-4px); }
+  .card__body { padding: 24px 26px 26px; display: grid; gap: 10px; align-content: start; }
+  .card__top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .card h3 { margin: 0; font-family: var(--font-display); font-weight: 460; font-size: 1.5rem; letter-spacing: -0.015em; line-height: 1.1; }
+  .card p { margin: 0; font-size: 14.5px; color: var(--muted); line-height: 1.6; }
+  .card__links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+  .chip {
+    font-size: 12.5px; font-weight: 600; text-decoration: none; color: var(--ink-soft);
+    padding: 7px 13px; border-radius: 999px; background: rgba(33, 27, 21, 0.055);
+    transition: background-color 0.5s var(--ease), color 0.5s var(--ease);
+  }
+  .chip:hover { background: var(--sage); color: var(--sage-ink); }
+  .card--a { grid-column: span 7; grid-row: span 2; }
+  .card--a .ph { aspect-ratio: 4 / 3.1; }
+  .card--a h3 { font-size: 1.9rem; }
+  .card--b, .card--c { grid-column: span 5; }
+  .card--b .ph, .card--c .ph { aspect-ratio: 16 / 7.2; }
+  .card--d { grid-column: span 5; }
+  .card--d .ph { aspect-ratio: 16 / 8.4; }
+  .strip { grid-column: span 7; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 26px; padding: 26px 30px; }
+  .t-label { font-size: 10.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+  .strip p { margin: 6px 0 0; font-size: 14.5px; color: var(--ink-soft); max-width: 62ch; }
+  @media (max-width: 1023px) {
+    .bento { grid-template-columns: 1fr 1fr; }
+    .card--a { grid-column: span 2; grid-row: auto; }
+    .card--b, .card--c, .card--d { grid-column: span 1; }
+    .strip { grid-column: span 2; }
+  }
+  @media (max-width: 767px) {
+    .bento { grid-template-columns: 1fr; }
+    .card--a, .card--b, .card--c, .card--d, .strip { grid-column: 1; }
+  }
+
+  /* editorial splits (tier 2 / tier 3) */
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 5vw, 80px); align-items: center; }
+  .split--flip .split__visual { order: -1; }
+  .rows { list-style: none; margin: 0; padding: 0; display: grid; }
+  .rows li { display: flex; align-items: baseline; justify-content: space-between; gap: 22px; padding: 18px 0; border-top: 1px solid var(--line); }
+  .rows li:last-child { border-bottom: 1px solid var(--line); }
+  .rows small { display: block; font-weight: 400; color: var(--muted); font-size: 13px; margin-top: 3px; }
+  .rows__name { font-weight: 600; font-size: 15px; }
+  .rows__value { font-family: var(--font-display); font-size: 1.25rem; font-weight: 440; white-space: nowrap; letter-spacing: -0.01em; }
+  .split__visual { position: relative; }
+  .split__visual .shell { transform: rotate(1.4deg); }
+  .split__visual .ph { aspect-ratio: 4 / 4.3; }
+  .margin-note { margin-top: 22px; padding: 20px 24px; border-radius: 1.35rem; background: rgba(69, 96, 58, 0.07); border: 1px solid rgba(69, 96, 58, 0.14); }
+  .margin-note p { margin: 6px 0 0; font-size: 14px; color: var(--ink-soft); }
+  @media (max-width: 767px) {
+    .split { grid-template-columns: 1fr; }
+    .split--flip .split__visual { order: 0; }
+    .split__visual .shell { transform: none; }
+  }
+
+  /* clock */
+  .clock { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(40px, 6vw, 90px); align-items: center; }
+  .giant { font-size: clamp(4.6rem, 11vw, 9.5rem); line-height: 0.92; letter-spacing: -0.035em; }
+  .giant small { display: block; font-family: var(--font-text); font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 18px; }
+  .clock__note { margin: 26px 0 0; font-size: 15px; color: var(--ink-soft); max-width: 52ch; }
+  .clock__visual .ph { aspect-ratio: 4 / 3; }
+  @media (max-width: 767px) { .clock { grid-template-columns: 1fr; } }
+
+  /* close + footer */
+  .close { padding-bottom: 110px; }
+  .close__band { display: grid; gap: 30px; max-width: 760px; justify-items: start; }
+  .footer { border-top: 1px solid var(--line); padding: 44px 0 54px; }
+  .footer__grid { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 34px; }
+  .footer p { margin: 0; font-size: 13px; color: var(--muted); }
+  .footer nav { display: flex; flex-wrap: wrap; gap: 20px; }
+  .footer a { font-size: 13px; color: var(--ink-soft); text-decoration: none; transition: color 0.5s var(--ease); }
+  .footer a:hover { color: var(--sage); }
+
+  /* scroll entry: transform + opacity + blur only */
+  html.js [data-reveal] {
+    opacity: 0; transform: translateY(52px); filter: blur(10px);
+    transition: opacity 0.95s var(--ease), transform 0.95s var(--ease), filter 0.95s var(--ease);
+    transition-delay: var(--d, 0s);
+    will-change: transform, opacity;
+  }
+  html.js [data-reveal].in { opacity: 1; transform: none; filter: blur(0); }
+
+  .skip-link { position: absolute; left: 16px; top: -48px; z-index: 100; background: var(--ink); color: var(--bg); padding: 10px 18px; border-radius: 999px; font-size: 13px; text-decoration: none; transition: top 0.4s var(--ease); }
+  .skip-link:focus { top: 16px; }
+  :focus-visible { outline: 2px solid var(--sage); outline-offset: 3px; border-radius: 6px; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    html.js [data-reveal] { opacity: 1; transform: none; filter: none; transition: none; }
+    .ticker__track { animation: none; }
+    .step:nth-child(n), .hero__main, .split__visual .shell { transform: none; }
+    .step:nth-child(n) { margin-inline: 0; }
+    .cascade { gap: 26px; flex-direction: column; align-items: center; }
+    .step { width: 100%; max-width: 420px; }
+  }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#tier-1">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+
 <header class="nav">
-  <div class="wrap nav__bar">
-    <a class="skip-link" href="#top">Skip to content</a>
-    <a class="nav__logo" href="#top"><span class="mark mark--initial" aria-hidden="true">C</span>Christmas Picks</a>
-    <nav class="nav__links" aria-label="Main">
-      <div class="nav__item">
-        <a class="nav__link" href="#tier-1">Picks <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <div class="nav__menu">
-          <div class="wrap grid">
-            <div class="menu-col span-3">
-              <p class="t-label">Tier 1 — list now</p>
-              <a href="#tier-1">Name ornaments<span>Wood to glass, $1.95 base</span></a>
-              <a href="#tier-1">Photo night lights<span>4.7k-review bestseller proof</span></a>
-              <a href="#tier-1">Stockings<span>Family sets, pet niche</span></a>
-              <a href="#tier-1">Blind box advents<span>Top-5 Etsy category</span></a>
-            </div>
-            <div class="menu-col span-3">
-              <p class="t-label">Tier 2 — test</p>
-              <a href="#tier-2">Suncatchers<span>Sells into January</span></a>
-              <a href="#tier-2">Shakers + tree skirt<span>Trend plays</span></a>
-              <p class="t-label">Tier 3 — stuffers</p>
-              <a href="#tier-3">Pocket hug, keychains<span>$12–22 retail band</span></a>
-            </div>
-            <a class="menu-card span-3 start-10" href="#tier-1">
-              <div class="panel"><img class="frame__img" src="assets/img/t1-glass.webp" alt="Glass ornament with a hologram insert" loading="lazy"></div>
-              <span class="t-card">The lead pick</span>
-              <span class="t-small muted">Family-name ornaments — 761K TikTok views in 30 days</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="nav__item"><a class="nav__link" href="#tier-2">Tier 2</a></div>
-      <div class="nav__item"><a class="nav__link" href="#tier-3">Tier 3</a></div>
-      <div class="nav__item"><a class="nav__link" href="#timing">The clock</a></div>
-    </nav>
-    <div class="nav__actions">
-      <a class="btn btn--primary" href="#tier-1">Open Tier 1</a>
-    </div>
-    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
-      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-    </button>
-  </div>
+  <a class="nav__logo" href="#top" aria-label="Christmas Picks, back to top"><i aria-hidden="true"></i>Christmas Picks</a>
+  <nav class="nav__links" aria-label="Main">
+    <a href="#plan">Plan</a>
+    <a href="#tier-1">Tier 1</a>
+    <a href="#tier-2">Tier 2</a>
+    <a href="#tier-3">Tier 3</a>
+    <a href="#timing">The clock</a>
+  </nav>
+  <a class="nav__cta" href="#tier-1">Open Tier 1</a>
+  <button class="nav__burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu" id="burger">
+    <span></span><span></span>
+  </button>
 </header>
 
+<div class="menu" id="menu">
+  <nav aria-label="Menu">
+    <a href="#plan">Plan</a>
+    <a href="#tier-1">Tier 1</a>
+    <a href="#tier-2">Tier 2</a>
+    <a href="#tier-3">Tier 3</a>
+    <a href="#timing">The clock</a>
+  </nav>
+</div>
+
 <main id="top">
-  <section class="hero hero--product" data-enter aria-labelledby="hero-h">
-    <div class="wrap"><div class="hero-text hero__in">
-      <div class="hero__head">
-        <div>
-          <p class="hero-notice">Peak buying window Nov 15 – Dec 10 · ship-by cutoff Dec 10</p>
-          <h1 id="hero-h">What to list first this Christmas</h1>
-          <p class="hero__lead">Every one of Merchize's 907 print-on-demand products, swept and cross-checked against 30 days of Etsy demand data — TikTok views, review counts, seller threads. Four SKUs proved out as lead products. List them now, test the trend bets second, stuff the stockings third.</p>
-        </div>
-        <div class="btn-row"><a class="btn btn--primary" href="#tier-1">See the picks</a><a class="btn btn--secondary" href="#plan">See the plan</a></div>
-      </div>
-      <div class="hero__stage">
-        <img src="assets/img/hero.jpg" srcset="assets/img/hero-800.jpg 800w, assets/img/hero.jpg 1920w" sizes="(max-width: 639px) 100vw, 1440px" alt="Personalized Christmas ornaments and holiday keepsakes arranged on a festive ground" style="--ly-pos: 50% 38%" fetchpriority="high">
-      </div>
-    </div></div>
-  </section>
 
-  <section class="section" style="--h: 2" id="plan" data-moment="pinned-chapters" aria-labelledby="plan-h">
-    <div class="wrap mo-pc__grid">
-      <div class="mo-pc__text">
-        <h2 id="plan-h">The launch, in order</h2>
-        <ol class="mo-pc__steps">
-          <li class="mo-pc__step">
-            <h3>This week: list Tier 1</h3>
-            <p>Four SKUs the demand data already proved: family-name ornaments, photo night lights, stockings, blind box advent calendars. Every design carries a name, a date or a photo — personalization is the whole game.</p>
-            <figure class="mo-pc__visual"><img src="assets/img/t1-wood.webp" alt="Wood ornament blank with hanging charms" loading="lazy"></figure>
-          </li>
-          <li class="mo-pc__step">
-            <h3>Next: test Tier 2</h3>
-            <p>One listing each for the trend bets — suncatchers, shaker ornaments, the quilt tree skirt, embroidered hoops and wreath sashes. Real demand on the craft side, thin proof at Etsy scale. Cheap to test.</p>
-            <figure class="mo-pc__visual"><img src="assets/img/t2-shaker.jpg" alt="Four-layer shaker ornament with glitter between its layers" loading="lazy"></figure>
-          </li>
-          <li class="mo-pc__step">
-            <h3>Then: fill with Tier 3</h3>
-            <p>Stuffers at stuffer prices — pocket hugs, keychains, photo building blocks, beanies and garden flags. Low ticket, pure margin, and they lift the basket on every ornament order.</p>
-            <figure class="mo-pc__visual"><img src="assets/img/t3-keychain.webp" alt="Acrylic keychain with a spinning charm" loading="lazy"></figure>
-          </li>
-        </ol>
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <span class="eyebrow" data-reveal><i aria-hidden="true"></i>907 SKUs × 30 days of Etsy demand</span>
+        <h1 id="hero-h" data-reveal style="--d: 0.08s">What to list first this <em>Christmas</em>.</h1>
+        <p class="lead" data-reveal style="--d: 0.16s">Every one of Merchize's 907 print-on-demand products, swept and cross-checked against 30 days of Etsy demand data — TikTok views, review counts, seller threads. Four SKUs proved out as lead products.</p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;" data-reveal style="--d: 0.24s">
+          <a class="btn btn--primary" href="#tier-1">See the picks
+            <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg></span>
+          </a>
+          <a class="btn btn--ghost" href="#plan">See the plan
+            <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg></span>
+          </a>
+        </div>
+        <dl class="hero__facts" data-reveal style="--d: 0.32s">
+          <div><b>907</b><span>SKUs swept</span></div>
+          <div><b>73</b><span>demand signals</span></div>
+          <div><b>60%+</b><span>lead margins</span></div>
+        </dl>
       </div>
-      <div class="mo-pc__visuals frame"></div>
+      <div class="hero__visual" data-reveal style="--d: 0.2s">
+        <div class="shell hero__back" aria-hidden="true"><div class="core"><div class="ph"><img src="assets/img/t1-stocking.jpg" alt=""></div></div></div>
+        <div class="shell hero__main">
+          <div class="ph"><img src="assets/img/hero.jpg" alt="Personalized Christmas ornaments and holiday keepsakes arranged on a festive ground" fetchpriority="high"></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section g2" id="tier-1" aria-labelledby="tier1-h">
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Peak window Nov 15 – Dec 10 <i></i> Order by Dec 7 for Christmas delivery <i></i> Ship-by cutoff Dec 10 <i></i> Personalization wins <i></i> Nurse niche = free traffic <i></i></span>
+      <span>Peak window Nov 15 – Dec 10 <i></i> Order by Dec 7 for Christmas delivery <i></i> Ship-by cutoff Dec 10 <i></i> Personalization wins <i></i> Nurse niche = free traffic <i></i></span>
+    </div>
+  </div>
+
+  <section id="plan" aria-labelledby="plan-h">
     <div class="wrap">
-      <div class="group">
-        <div class="section-head">
-          <h2 id="tier1-h">Tier 1 — list now. <span class="muted">Four SKUs with hard demand proof.</span></h2>
-        </div>
-        <div class="grid">
-          <article class="card card--row card--open span-6">
-            <h3>Family-name ornaments, $1.95–5.50 base</h3>
-            <p>Wood with charms $1.95, ceramic $2.50, two-layer acrylic $4.50, glass + hologram $5.50 — list at $15–35. 761K TikTok views on personalized ornaments in 30 days; a family-name seller runs $17.99 live; r/EtsySellers reports these move year-round. Design angles: family, pet, baby's first Christmas — and nurse, for the audience you already own.</p>
-            <div class="panel"><img class="frame__img" src="assets/img/t1-acrylic.webp" alt="Custom-shape two-layer acrylic ornament blank" loading="lazy"></div>
-            <div class="card__links">
-              <a class="link" href="https://merchize.com/product/custom-shape-wood-ornament-with-hanging-charms/">Wood $1.95 ↗</a>
-              <a class="link" href="https://merchize.com/product/custom-shape-2-layer-acrylic-ornament-2-side-printed/">Acrylic 2-layer $4.50 ↗</a>
-              <a class="link" href="https://merchize.com/product/glass-and-hologram-ornament/">Glass + hologram $5.50 ↗</a>
-            </div>
-          </article>
-          <article class="card card--row card--open span-6">
-            <h3>Photo night lights, $14–17.50 base</h3>
-            <p>Engraved wavy acrylic on beech base $17.50, photo light box $14 — list at $35–49, the highest-AOV SKU on the board. Etsy's photo night light bestseller carries 4.7k reviews; a lithophane lamp sits past 722. Memorial and couples framing sells these past Dec 25.</p>
-            <div class="panel"><img class="frame__img" src="assets/img/t1-nightlight.jpg" alt="Engraved photo night light with acrylic panel on a wooden base" loading="lazy"></div>
-            <div class="card__links">
-              <a class="link" href="https://merchize.com/product/engraved-custom-shape-wavy-acrylic-photo-night-light-beech-wood-base/">Beech base $17.50 ↗</a>
-              <a class="link" href="https://merchize.com/product/custom-shape-photo-night-light-box/">Light box $14 ↗</a>
-            </div>
-          </article>
-        </div>
+      <div class="sec-head">
+        <span class="eyebrow" data-reveal><i aria-hidden="true"></i>The launch, in order</span>
+        <h2 id="plan-h" data-reveal style="--d: 0.08s">List the proven. Test the trends. <em>Stuff the stockings.</em></h2>
       </div>
-      <div class="grid">
-        <article class="card card--row card--open span-6">
-          <h3>Stockings, including the dog's, $4.55–7.49</h3>
-          <p>Christmas stocking $7.49, dog-bone stocking $4.55 — list at $30–65, family sets of four to six. The Etsy band is proven and the pet stocking is a validated niche with its own hashtags. One listing, two audiences.</p>
-          <div class="panel"><img class="frame__img" src="assets/img/t1-stocking.jpg" alt="Personalized Christmas stocking hanging on a mantel" loading="lazy"></div>
-          <div class="card__links">
-            <a class="link" href="https://merchize.com/product/christmas-stocking/">Stocking $7.49 ↗</a>
-            <a class="link" href="https://merchize.com/product/dog-bone-christmas-stocking/">Dog bone $4.55 ↗</a>
-          </div>
+      <div class="cascade">
+        <article class="step" data-reveal>
+          <div class="shell"><div class="core">
+            <div class="ph"><img src="assets/img/t1-wood.webp" alt="Wood ornament blank with hanging charms" loading="lazy"></div>
+            <div class="step__body">
+              <span class="step-num" aria-hidden="true">01</span>
+              <h3>This week: list Tier 1</h3>
+              <p>Four SKUs the demand data already proved: family-name ornaments, photo night lights, stockings, blind box advent calendars. Every design carries a name, a date or a photo.</p>
+            </div>
+          </div></div>
         </article>
-        <article class="card card--row card--open span-6">
-          <h3>Blind box advent calendars, $7.50 base</h3>
-          <p>Wood charms $7.50, acrylic charms $8 — list at $40–70. Advent calendars are a top-5 Etsy Christmas category at $40–120, and almost no print-on-demand shop competes here. The sleeper pick of the sweep.</p>
-          <div class="panel"><img class="frame__img" src="assets/img/t1-advent.jpg" alt="Blind box advent calendar with small wooden charms" loading="lazy"></div>
-          <div class="card__links">
-            <a class="link" href="https://merchize.com/product/blind-box-advent-calendar-with-wood-charms/">Wood $7.50 ↗</a>
-            <a class="link" href="https://merchize.com/product/blind-box-advent-calendar-with-acrylic-charms/">Acrylic $8 ↗</a>
-          </div>
+        <article class="step" data-reveal style="--d: 0.12s">
+          <div class="shell"><div class="core">
+            <div class="ph"><img src="assets/img/t2-shaker.jpg" alt="Four-layer shaker ornament with glitter between its layers" loading="lazy"></div>
+            <div class="step__body">
+              <span class="step-num" aria-hidden="true">02</span>
+              <h3>Next: test Tier 2</h3>
+              <p>One listing each for the trend bets — suncatchers, shakers, the quilt tree skirt, embroidered hoops and wreath sashes. Real craft-side demand, thin Etsy proof. Cheap to test.</p>
+            </div>
+          </div></div>
+        </article>
+        <article class="step" data-reveal style="--d: 0.24s">
+          <div class="shell"><div class="core">
+            <div class="ph"><img src="assets/img/t3-keychain.webp" alt="Acrylic keychain with a spinning charm" loading="lazy"></div>
+            <div class="step__body">
+              <span class="step-num" aria-hidden="true">03</span>
+              <h3>Then: fill with Tier 3</h3>
+              <p>Stuffers at stuffer prices — pocket hugs, keychains, photo building blocks. Low ticket, pure margin, and they lift the basket on every ornament order.</p>
+            </div>
+          </div></div>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section" id="tier-2" aria-labelledby="tier2-h">
-    <div class="wrap grid grid--middle">
-      <div class="span-6">
-        <div class="section-head">
-          <h2 id="tier2-h">Tier 2 — test. <span class="muted">Trend plays with thin proof.</span></h2>
-          <p>One listing each, then let the data vote.</p>
+  <section id="tier-1" aria-labelledby="tier1-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow" data-reveal><i aria-hidden="true"></i>Tier 1 — list now</span>
+        <h2 id="tier1-h" data-reveal style="--d: 0.08s">Four SKUs with hard <em>demand proof.</em></h2>
+      </div>
+      <div class="bento">
+        <article class="shell card card--a" data-reveal>
+          <div class="core">
+            <div class="ph"><img src="assets/img/t1-acrylic.webp" alt="Custom-shape two-layer acrylic ornament blank" loading="lazy"></div>
+            <div class="card__body">
+              <div class="card__top"><span class="t-label">The lead pick</span><span class="t-label">$15–35 retail</span></div>
+              <h3>Family-name ornaments</h3>
+              <p>Wood with charms $1.95, ceramic $2.50, two-layer acrylic $4.50, glass + hologram $5.50. 761K TikTok views on personalized ornaments in 30 days; a family-name seller runs $17.99 live; r/EtsySellers reports these move year-round. Design angles: family, pet, baby's first Christmas — and nurse, for the audience you already own.</p>
+              <div class="card__links">
+                <a class="chip" href="https://merchize.com/product/custom-shape-wood-ornament-with-hanging-charms/">Wood $1.95 ↗</a>
+                <a class="chip" href="https://merchize.com/product/custom-shape-2-layer-acrylic-ornament-2-side-printed/">Acrylic 2-layer $4.50 ↗</a>
+                <a class="chip" href="https://merchize.com/product/glass-and-hologram-ornament/">Glass + hologram $5.50 ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="shell card card--b" data-reveal style="--d: 0.1s">
+          <div class="core">
+            <div class="ph"><img src="assets/img/t1-nightlight.jpg" alt="Engraved photo night light with acrylic panel on a wooden base" loading="lazy"></div>
+            <div class="card__body">
+              <div class="card__top"><span class="t-label">$35–49 retail</span></div>
+              <h3>Photo night lights</h3>
+              <p>Engraved beech base $17.50, photo light box $14 — the highest-AOV SKU on the board. Etsy's bestseller carries 4.7k reviews; a lithophane lamp sits past 722. Sells past Dec 25.</p>
+              <div class="card__links">
+                <a class="chip" href="https://merchize.com/product/engraved-custom-shape-wavy-acrylic-photo-night-light-beech-wood-base/">Beech base $17.50 ↗</a>
+                <a class="chip" href="https://merchize.com/product/custom-shape-photo-night-light-box/">Light box $14 ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="shell card card--c" data-reveal style="--d: 0.18s">
+          <div class="core">
+            <div class="ph"><img src="assets/img/t1-stocking.jpg" alt="Personalized Christmas stocking hanging on a mantel" loading="lazy"></div>
+            <div class="card__body">
+              <div class="card__top"><span class="t-label">$30–65 retail</span></div>
+              <h3>Stockings, including the dog's</h3>
+              <p>Stocking $7.49, dog-bone $4.55 — family sets of four to six. Proven Etsy band, and the pet stocking is a validated niche with its own hashtags. One listing, two audiences.</p>
+              <div class="card__links">
+                <a class="chip" href="https://merchize.com/product/christmas-stocking/">Stocking $7.49 ↗</a>
+                <a class="chip" href="https://merchize.com/product/dog-bone-christmas-stocking/">Dog bone $4.55 ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="shell card card--d" data-reveal>
+          <div class="core">
+            <div class="ph"><img src="assets/img/t1-advent.jpg" alt="Blind box advent calendar with small wooden charms" loading="lazy"></div>
+            <div class="card__body">
+              <div class="card__top"><span class="t-label">$40–70 retail</span></div>
+              <h3>Blind box advent calendars</h3>
+              <p>Wood charms $7.50, acrylic $8 — a top-5 Etsy Christmas category at $40–120 with almost no print-on-demand competition. The sleeper pick of the sweep.</p>
+              <div class="card__links">
+                <a class="chip" href="https://merchize.com/product/blind-box-advent-calendar-with-wood-charms/">Wood $7.50 ↗</a>
+                <a class="chip" href="https://merchize.com/product/blind-box-advent-calendar-with-acrylic-charms/">Acrylic $8 ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="shell strip" data-reveal style="--d: 0.1s">
+          <div>
+            <p class="t-label" style="margin: 0;">Margin math</p>
+            <p>$2 acrylic + ~$6 fulfillment = <b>$8 in</b>. List at $19.95 + $4.99 shipping; Etsy fees ~$4.50 — <b>~$12 profit, 60%+ margin.</b> A family set of four at $34.99 ships in one parcel and pushes it higher.</p>
+          </div>
+          <a class="tlink" href="https://merchize.com/product/custom-shape-2-layer-acrylic-ornament-2-side-printed/">Acrylic ornament on Merchize ↗</a>
         </div>
-        <ul class="rows">
-          <li><span class="rows__name">Suncatchers<small>Stained glass $12.25 · wavy $2 · luminous $4.50 — Merchize trending + bestseller flags</small></span><span class="rows__value">$16–45</span></li>
+      </div>
+    </div>
+  </section>
+
+  <section id="tier-2" aria-labelledby="tier2-h">
+    <div class="wrap split">
+      <div>
+        <div class="sec-head" style="margin-bottom: 34px;">
+          <span class="eyebrow" data-reveal><i aria-hidden="true"></i>Tier 2 — test</span>
+          <h2 id="tier2-h" data-reveal style="--d: 0.08s">Trend plays with <em>thin proof.</em></h2>
+          <p class="lead" data-reveal style="--d: 0.14s">One listing each, then let the data vote.</p>
+        </div>
+        <ul class="rows" data-reveal style="--d: 0.18s">
+          <li><span class="rows__name">Suncatchers<small>Stained glass $12.25 · wavy $2 · luminous $4.50 — trending + bestseller flags</small></span><span class="rows__value">$16–45</span></li>
           <li><span class="rows__name">Shaker ornaments + keychains<small>4-layer $4.50 · hologram $5 · keychain $3.50 — hot on the craft side only</small></span><span class="rows__value">$15–38</span></li>
           <li><span class="rows__name">Quilt tree skirt<small>$12 plain · $14 padded — one sale equals five ornament sales</small></span><span class="rows__value">$55–85</span></li>
           <li><span class="rows__name">Embroidered + wreath sashes<small>Ornament $2.30 · hoop $4.40 · sash $9–13.50 — the Heirloom trend, near-zero POD competition</small></span><span class="rows__value">$22–38</span></li>
           <li><span class="rows__name">Pet line<small>Dog-bone stocking $4.55 · pet ornaments · pet tank $7.50 — own hashtags, strong sellers</small></span><span class="rows__value">$18–35</span></li>
         </ul>
       </div>
-      <div class="span-6 start-7">
-        <div class="photo-box">
-          <img src="assets/img/t2-stained.jpg" alt="Stained-glass suncatcher with a golden frame for window hanging" loading="lazy">
-        </div>
+      <div class="split__visual" data-reveal style="--d: 0.12s">
+        <div class="shell"><div class="core"><div class="ph"><img src="assets/img/t2-stained.jpg" alt="Stained-glass suncatcher with a golden frame for window hanging" loading="lazy"></div></div></div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="tier-3" aria-labelledby="tier3-h">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 id="tier3-h">Tier 3 — stuffers. <span class="muted">Low ticket, pure margin.</span></h2>
-        <p>They lift the basket on every ornament order.</p>
-      </div>
-      <div class="grid grid--top">
-        <div class="span-6">
-          <ul class="rows">
-            <li><span class="rows__name">Pocket Hug<small>$2.40 base — the viral stocking stuffer</small></span><span class="rows__value">$12–18</span></li>
-            <li><span class="rows__name">Keychains and tags<small>Ten variants, $1.70–4.90 — spinning charm, hologram, connected</small></span><span class="rows__value">$12–22</span></li>
-            <li><span class="rows__name">Photo gadgets<small>Building block $7 · pull-out photo box $11.75 · crystal ball $14.80 — the viral TikTok format</small></span><span class="rows__value">$30–60</span></li>
-            <li><span class="rows__name">Beanies + socks<small>Leather patch beanie US $8.50–9.79 · embroidered socks $2.80 — matching family sets</small></span><span class="rows__value">$18–38</span></li>
-            <li><span class="rows__name">Garden flag + mailbox cover<small>Both Made in US — outdoor decor ships fast for Q4</small></span><span class="rows__value">$25–40</span></li>
-          </ul>
+  <section id="tier-3" aria-labelledby="tier3-h">
+    <div class="wrap split split--flip">
+      <div>
+        <div class="sec-head" style="margin-bottom: 34px;">
+          <span class="eyebrow" data-reveal><i aria-hidden="true"></i>Tier 3 — stuffers</span>
+          <h2 id="tier3-h" data-reveal style="--d: 0.08s">Low ticket, <em>pure margin.</em></h2>
+          <p class="lead" data-reveal style="--d: 0.14s">They lift the basket on every ornament order.</p>
         </div>
-        <div class="span-6 start-7">
-          <div style="margin-bottom: var(--s-4);">
-            <p class="t-label">Margin math</p>
-            <p class="t-small" style="margin-top: var(--s-2);">$2 acrylic + ~$6 fulfillment = <b>$8 in</b>; list at $19.95 + $4.99, fees ~$4.50 — <b>~$12 profit, 60%+ margin</b>. A family set of four at $34.99 ships as one parcel. <a class="link" href="https://merchize.com/product/pocket-hug/">Pocket Hug on Merchize ↗</a></p>
-          </div>
-          <div class="photo-box photo-box--land">
-            <img src="assets/img/t3-pockethug.jpg" alt="Pocket hug token card with a small charm" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="timing" aria-labelledby="timing-h">
-    <div class="wrap grid grid--top">
-      <div class="span-6">
-        <div class="section-head">
-          <h2 id="timing-h">The clock is the constraint. <span class="muted">Peak window Nov 15 – Dec 10.</span></h2>
-        </div>
-        <ul class="rows">
-          <li><span class="rows__name">Ship-by cutoff<small>Standard Etsy cutoff is Dec 10 — under-promise on every ship date</small></span><span class="rows__value">Dec 10</span></li>
-          <li><span class="rows__name">Deadline messaging<small>"Order by Dec 7 for Christmas delivery" is already standard seller copy — put it in every listing now</small></span><span class="rows__value">Dec 7</span></li>
-          <li><span class="rows__name">Fulfillment priority<small>US-fulfilled and 1-Day Production SKUs first; check the flag on each product page</small></span><span class="rows__value">US</span></li>
-          <li><span class="rows__name">January tail<small>17,760 Etsy "christmas" searches in Jan 2026 — night lights, suncatchers and signs outlive the season</small></span><span class="rows__value">Evergreen</span></li>
+        <ul class="rows" data-reveal style="--d: 0.18s">
+          <li><span class="rows__name">Pocket Hug<small>$2.40 base — the viral stocking stuffer</small></span><span class="rows__value">$12–18</span></li>
+          <li><span class="rows__name">Keychains and tags<small>Ten variants, $1.70–4.90 — spinning charm, hologram, connected</small></span><span class="rows__value">$12–22</span></li>
+          <li><span class="rows__name">Photo gadgets<small>Building block $7 · pull-out photo box $11.75 · crystal ball $14.80 — the viral TikTok format</small></span><span class="rows__value">$30–60</span></li>
+          <li><span class="rows__name">Beanies + socks<small>Leather patch beanie US $8.50–9.79 · embroidered socks $2.80 — matching family sets</small></span><span class="rows__value">$18–38</span></li>
+          <li><span class="rows__name">Garden flag + mailbox cover<small>Both Made in US — outdoor decor ships fast for Q4</small></span><span class="rows__value">$25–40</span></li>
         </ul>
-        <p style="margin-top: var(--s-5);">One more lever: the nursing audience you already own. Nurse-specific Christmas designs — ornament sets, sweatshirts — convert past buyers at zero acquisition cost. Generic Christmas anything is a race to the bottom; niche art is not.</p>
+        <div class="margin-note" data-reveal style="--d: 0.24s">
+          <p class="t-label" style="margin: 0;">Margin math</p>
+          <p>$2 acrylic + ~$6 fulfillment = <b>$8 in</b>; list at $19.95 + $4.99, fees ~$4.50 — <b>~$12 profit, 60%+ margin</b>. <a class="tlink" href="https://merchize.com/product/pocket-hug/">Pocket Hug on Merchize ↗</a></p>
+        </div>
       </div>
-      <div class="span-6 start-7 stack-5">
-        <div>
-          <p class="t-stat">4</p>
-          <p class="t-small">selling weeks left in the peak window. Tier 1 listings go live first.</p>
-        </div>
-        <div class="photo-box photo-box--land">
-          <img src="assets/img/t2-skirt.jpg" alt="Quilt Christmas tree skirt under a decorated tree" loading="lazy">
-        </div>
+      <div class="split__visual" data-reveal style="--d: 0.12s">
+        <div class="shell"><div class="core"><div class="ph"><img src="assets/img/t3-pockethug.jpg" alt="Pocket hug token card with a small charm" loading="lazy"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="timing" aria-labelledby="timing-h">
+    <div class="wrap clock">
+      <div>
+        <p class="giant" data-reveal><small>The standard Etsy ship-by cutoff</small>Dec 10</p>
+        <p class="clock__note" data-reveal style="--d: 0.1s">Peak traffic runs Nov 15 – Dec 10 — you are mid-window now. "Order by Dec 7" is already standard seller copy: put it in every listing. Prioritize US-fulfilled and 1-Day Production SKUs. And listings keep selling — 17,760 Etsy "christmas" searches in January 2026.</p>
+        <p class="clock__note" data-reveal style="--d: 0.18s">One more lever: the nursing audience you already own. Nurse-specific Christmas designs convert past buyers at zero acquisition cost. Generic Christmas anything is a race to the bottom; niche art is not.</p>
+      </div>
+      <div class="clock__visual" data-reveal style="--d: 0.14s">
+        <div class="shell"><div class="core"><div class="ph"><img src="assets/img/t2-skirt.jpg" alt="Quilt Christmas tree skirt under a decorated tree" loading="lazy"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="close-h">
+    <div class="wrap close__band">
+      <span class="eyebrow" data-reveal><i aria-hidden="true"></i>Four selling weeks left</span>
+      <h2 id="close-h" data-reveal style="--d: 0.08s">Start with the four <em>Tier 1 listings.</em></h2>
+      <div data-reveal style="--d: 0.16s">
+        <a class="btn btn--primary" href="#tier-1" style="padding: 12px 14px 12px 30px; font-size: 16px;">Open Tier 1
+          <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8h9M8.5 4l4 4-4 4"/></svg></span>
+        </a>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="footer closing" id="contact" aria-labelledby="close-h">
-  <div class="wrap">
-    <div class="closing__cta close--type">
-      <div class="section-head">
-        <h2 id="close-h">Start with the four Tier 1 listings</h2>
-        <p>Open each SKU on Merchize, mock up the family, pet and nurse designs, and publish before the peak window.</p>
-      </div>
-      <a class="btn btn--primary btn--xl btn--wide" href="#tier-1">Open Tier 1<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
-    </div>
-    <div class="closing__links">
-      <div class="grid">
-        <div class="span-4 stack-4">
-          <a class="nav__logo" href="#top">Christmas Picks</a>
-          <p class="footer__lede">A decision board: 907 Merchize SKUs ranked against 30 days of Etsy demand data.</p>
-        </div>
-        <div class="span-2 footer__col"><h3>Picks</h3><ul><li><a href="#tier-1">Tier 1</a></li><li><a href="#tier-2">Tier 2</a></li><li><a href="#tier-3">Tier 3</a></li></ul></div>
-        <div class="span-2 footer__col"><h3>Plan</h3><ul><li><a href="#plan">Launch order</a></li><li><a href="#timing">The clock</a></li></ul></div>
-        <div class="span-2 footer__col"><h3>Shop</h3><ul><li><a href="https://merchize.com/all-products/">Merchize catalog ↗</a></li><li><a href="https://merchize.com/product-category/collection/christmas/">Christmas collection ↗</a></li></ul></div>
-        <div class="span-2 footer__col"><h3>Contact</h3><ul><li><a href="#top">Back to top</a></li></ul></div>
-      </div>
-      <div class="footer__legal">
-        <span>&copy; 2026 Christmas Picks '26</span>
-        <a class="credits" href="https://merchize.com/all-products/">Product photographs via the Merchize catalog</a>
-      </div>
-    </div>
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <p>© 2026 Christmas Picks '26 — a decision board: 907 Merchize SKUs ranked against 30 days of Etsy demand data.</p>
+    <nav aria-label="Source">
+      <a href="https://merchize.com/all-products/">Merchize catalog ↗</a>
+      <a href="https://merchize.com/product-category/collection/christmas/">Christmas collection ↗</a>
+      <a href="#top">Back to top</a>
+    </nav>
   </div>
 </footer>
 
-<script type="module" src="assets/system.js"></script>
-<script type="module" src="assets/motion/motion.js"></script>
-<script type="module" src="assets/layout/layout.js"></script>
+<script>
+  document.documentElement.classList.add('js');
+  var revealAll = function () {
+    document.querySelectorAll('[data-reveal]').forEach(function (el) { el.classList.add('in'); });
+  };
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || navigator.webdriver) {
+    revealAll();
+  } else if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
+  } else {
+    revealAll();
+  }
+
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('menu');
+  burger.addEventListener('click', function () {
+    var open = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      document.body.classList.remove('menu-open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
 </body>
 </html>
